@@ -1,0 +1,52 @@
+﻿body {
+    background-color: #111111;
+    color: white;            
+}
+
+a {
+    color: white;
+}
+
+div#content {
+    margin-right: auto; 
+    margin-left: auto; 
+}
+
+th {
+    text-align: left;
+}
+
+.control { 
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    padding: 2px;
+    width: 400px;
+    padding: 5px;
+}
+
+div.scroll {
+    height: 600px;
+    width: 450px;
+    overflow: auto;
+}
+
+table {
+    -moz-border-radius: 6px; /* FF1+ */
+    -webkit-border-radius: 6px; /* Saf3-4 */
+    border-radius: 6px; /* Opera 10.5, IE9, Saf5, Chrome */
+}
+
+#column1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+	width: 700px;
+    padding: 10px;
+}
+
+#column2 {
+    position: absolute;
+    top: 10;
+    left: 730px;
+}

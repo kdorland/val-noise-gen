@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <script src="mersenne-twister.js"></script>
+        <script src="jquery-1.6.4.min.js"></script>
+        <script src="jscolor/jscolor.js"></script>
+        <script src="ValueNoise.js"></script>
+        <script src="MyNoise.js"></script>
+        <script src="main.js"></script>
+        <title>Value Noise generator</title>
+        <link rel="stylesheet" type="text/css" href="layout.css"/> 
+    </head>
+    <body>
+        <form id="form">
+        <div id="column1">
+            <canvas id="canvas" width="700" height="500" class="alignLeft">
+                <p>Your browser does not support the canvas element.</p>
+            </canvas>
+        </div>
+        
+        <div id="column2" class="scroll">  
+            <table class="control">
+            <th>Main color</th>
+            <tr>
+                <td><input name="mainColor" class="color" value="26FF93"></td>
+            </tr>
+            </table>
+            
+            <table class="control">
+            <th>Seed</th>
+            <tr>
+                <td><input name="seed"></td>
+            </tr>
+            </table>
+            
+            <table class="control">
+            <th>Persistence</th>
+            <tr>
+                <td><input name="persistence" type="range" min="0" max="100" value="55"> 
+                (requires regeneration)
+                </td>
+            </tr>
+            </table>
+
+            <table class="control">
+            <th colspan="3">Cutoff 1</th>
+            <tr>
+                <td><input type="checkbox" name="cutoff1" value="c1"></td>
+                <td><input name="c1v" type="range" min="0" max="100" value="30"></td>
+                <td><input name="cutoffColor1" class="color" value="BFDBFF"></td>
+            </tr>
+            </table>
+            
+            <table class="control">
+            <th colspan="3">Cutoff 2</th>
+            <tr>
+                <td><input type="checkbox" name="cutoff2" value="c2"></td>
+                <td><input name="c2v" type="range" min="0" max="100" value="60"></td>
+                <td><input name="cutoffColor2" class="color" value="33871A"></td>
+            </tr>
+            </table>
+            
+            <table class="control">
+            <th colspan="3">Cutoff 3</th>
+            <tr>
+                <td><input type="checkbox" name="cutoff3" value="c3"></td>
+                <td><input name="c3v" type="range" min="0" max="100" value="100"></td>
+                <td><input name="cutoffColor3" class="color" value="0B330A"></td>
+            </tr>
+            </table>
+            
+            <br/><input type="submit" value="Regenerate"> (hotkey: space)
+            <br/><p/><a href="" id="url">Link to this noise!</a>
+        </div>
+        </form>
+    </body>
+</html>
